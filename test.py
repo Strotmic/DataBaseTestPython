@@ -29,9 +29,9 @@ cur.execute('''CREATE TABLE if not exists test(id integer primary key, name text
 #cur.execute("insert into test(id, name) values(4,'Bob2')")
 
 #cur.execute('''insert into test(id, name) values(13,"Mary")''')
-
-cur.execute('''select * from test''')
-
+print("-----------------------------")
+print(cur.execute('''select * from test'''))
+print("-----------------------------")
 #for i in con:
     #print(i)
 for row in cur.execute('SELECT * FROM test ORDER BY id'):
